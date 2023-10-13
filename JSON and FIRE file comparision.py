@@ -1,7 +1,7 @@
 import json
 
 # Load the JSON data and extract the value to compare
-json_file_path = 'C:/Users/STS546-RAGHUL S/Documents/TBS Tool/JSON file - TBS.json'
+json_file_path = 'C:/Users/STS546-RAGHUL S/Documents/TBS Tool/JSON_file - TBS.json'
 with open(json_file_path, 'r') as json_file:
     json_data = json.load(json_file)
 
@@ -34,8 +34,8 @@ uppercase_string_zipcode = value_to_compare_zipcode.upper()
 #print(value_to_compare_state)
 value_to_compare_phone = json_data['returnData']["business"]['phone']
 #characters_to_remove_phone = "(), -"
-trimmed_string_phone = value_to_compare_phone.strip('(')(")")(',')
-print(trimmed_string_phone)
+#trimmed_string_phone = value_to_compare_phone.strip('(')(")")(',')
+#print(trimmed_string_phone)
 
 
 # Read the content of the text file
@@ -171,7 +171,7 @@ position=position_10
 read_value_10 = text_content[position : position + value_length_10]
 print(read_value_10)
 
-if trimmed_string_phone == read_value_10:
-    print(f'Is Matched')
-else:
-    print(f'Is Not Matched')
+#if trimmed_string_phone == read_value_10:
+#    print(f'Is Matched')
+#else:
+#    print(f'Is Not Matched')
